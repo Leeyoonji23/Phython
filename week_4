@@ -1,1 +1,87 @@
+var1="난생\n처음"
+print(var1)
 
+
+print("줄바꿈\n연습")
+print("\t탭키\t연습")
+print("어떤 글자를\"강조\"하는 효과1")
+print("어떤 글자를\'강조\'하는 효과 2")
+print("\\\\백슬래시 2개 출력")
+
+var1="난생처음! Python"
+len(var1)
+print(len(var1))
+
+var1= input("첫 번째 문자열:")
+var2= input("두 번째 문자열:")
+
+len1=len(var1)
+len2=len(var2)
+
+diff= len1-len2
+print("두 문자열의 길이 차이는", diff, "입니다.")
+
+ss='First Phython을 밤 12시까지 열공중!'
+var1= ss.upper()
+print(var1)
+var2= ss.lower()
+print(var2)
+
+ss="난생 처음 파이썬을 처음으로 학습중입니다. 파이썬은 처음이지만 재미있네요^^"
+var1=ss.count("처음")
+var2=ss.count("Phython")
+print(var1)
+print(var2)
+
+s="난생처음 Python"
+s.find("난생")
+print(s.find("난생"))
+
+ss="세상에서 제일가는 포테이토 칩"
+ss.find("제일")
+print(ss.find("제일"))
+
+#전체 글자수 출력
+#키보드로 입력받은 문자가 s에 있는지 찾아 몇번째위치에 있는지 출력
+
+input("입력하고 싶은 문자를 입력하세요:")
+a="동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세"
+len1=len(a)
+print("문자열의 길이는",len(a))
+a.count("동")
+print("동이 몇 번?:",a.count("동"))
+a.find("동")
+print("동이 어디에?",a.find("동"))
+
+s = input("문자열을 입력하세요: ")
+c = input("찾을 문자를 입력하세요: ")
+
+len1=len("c")
+print("문자열의 길이는",len("c"))
+
+if c in s:
+    print(f"{c}은(는) 문자열 {s}의 {s.index(c)}에 위치합니다.")
+else:
+    print(f"{c}은(는) 문자열 {s}에 존재하지 않습니다.")
+
+
+input("동해물과 백두산이 마르고 닳도록 에서 찾고싶은 문자를 입력하세요")
+a="동해물과 백두산이 마르고 닳도록"
+len1=len(a)
+print("문자열의 길이는",len(a))
+a.count("동")
+print("동이 몇 번?:",a.count("동"))
+a.find("동")
+print("동이 어디에?",a.find("동"))
+
+#---------------------------------------
+pos=()
+s="동해물과 백두산이 마르고 닳도록 동해물과"
+print("문자열 길이:",len(s))
+
+print("찾고 싶은 문자가 몇 번 나올까요:",(s.count("동")))
+while True:
+    pos=s.find("동",pos)
+
+    print("찾는 문자의 위치:",pos)
+    pos=pos+1
